@@ -1,4 +1,7 @@
-# oklab() numeric minification
+# oklab() rounding: out-of-gamut colours stay in native space
 
-`oklab()` values can have their numbers minified (leading zero removal) but
-must not be converted to hex since oklab colors may fall outside the sRGB gamut.
+`oklab()` values with excess precision are rounded to 3 decimal places.
+Out-of-gamut oklab colours (chroma too high to fit in sRGB) stay in oklab
+space; they cannot be safely represented as a hex value.
+
+In-gamut oklab colours may be minified to hex if the hex form is shorter.
