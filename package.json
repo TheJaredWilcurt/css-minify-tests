@@ -18,5 +18,15 @@
     "lightningcss": "^1.30.0",
     "postcss": "^8.5.0",
     "sass": "^1.99.0"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "25.9.0"
+    },
+    "packageManager": {
+      "name": "npm",
+      "version": "11.14.1"
+    }
   }
 }
